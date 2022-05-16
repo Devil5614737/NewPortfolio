@@ -1,0 +1,1600 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+input, button, textarea, a {
+  font: inherit;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+header .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 7em;
+}
+
+header .wrapper nav {
+  padding-top: 1.7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .wrapper nav .logo {
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+header .wrapper nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .wrapper nav .links a {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-left: 32px;
+  position: relative;
+}
+
+header .wrapper nav .links a:hover::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border-radius: 20px;
+  background-color: black;
+  top: 18px;
+  z-index: 111;
+  -webkit-animation-name: border;
+          animation-name: border;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+header .wrapper .heroSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .wrapper .heroSection .heroText {
+  overflow: hidden;
+}
+
+header .wrapper .heroSection .heroText .subTitle {
+  overflow: hidden;
+  font-size: 2em;
+}
+
+header .wrapper .heroSection .heroText .title {
+  overflow: hidden;
+  font-family: "Abril Fatface", cursive;
+  font-weight: bold;
+  font-size: 5em;
+}
+
+header .wrapper .heroSection .heroText .projectBtn {
+  font-weight: bold;
+  background-color: #f66c6c;
+  width: 130px;
+  height: 40px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.7em;
+  color: white;
+  margin-top: 22px;
+}
+
+header .wrapper .heroSection .heroBg .video {
+  width: 450px;
+  height: 450px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: translateX(42px);
+          transform: translateX(42px);
+}
+
+main {
+  margin-top: 84px;
+}
+
+main .projectSection {
+  padding: 4em 0;
+  background-color: #fdff9e;
+}
+
+main .projectSection .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 7em;
+}
+
+main .projectSection .wrapper .title {
+  position: relative;
+}
+
+main .projectSection .wrapper .title h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Abril Fatface", cursive;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+main .projectSection .wrapper .title h1 img {
+  margin-left: 7px;
+  width: 15px;
+  height: 15px;
+}
+
+main .projectSection .wrapper .title p {
+  font-size: 1.7em;
+  color: #0e34ff;
+}
+
+main .projectSection .wrapper .projectContainer {
+  margin-top: 53px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 22px 22px;
+}
+
+main .projectSection .wrapper .projectContainer .project {
+  position: relative;
+  overflow: hidden;
+}
+
+main .projectSection .wrapper .projectContainer .project:hover::before {
+  content: "";
+  position: absolute;
+  background: black;
+  width: 100%;
+  height: 100%;
+  -webkit-animation-name: clip;
+          animation-name: clip;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  z-index: 1;
+}
+
+main .projectSection .wrapper .projectContainer .project:hover .projectInfo {
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-animation-name: info;
+          animation-name: info;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+main .projectSection .wrapper .projectContainer .project img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .projectSection .wrapper .projectContainer .project .projectInfo {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 888;
+  color: white;
+}
+
+main .projectSection .wrapper .projectContainer .project .projectInfo .title {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+}
+
+main .projectSection .wrapper .projectContainer .project .projectInfo .techs {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .projectSection .wrapper .projectContainer .project .projectInfo .techs p {
+  font-size: 1.3rem;
+  margin-right: 1em;
+}
+
+main .skillSection {
+  margin-top: 44px;
+}
+
+main .skillSection .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 7em;
+}
+
+main .skillSection .wrapper .title h1 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+main .skillSection .wrapper .title h1 img {
+  margin-left: 7px;
+  width: 15px;
+  height: 15px;
+}
+
+main .skillSection .wrapper .title p {
+  font-size: 1.7em;
+  color: #0e34ff;
+}
+
+main .skillSection .wrapper .skillContainer {
+  margin-top: 53px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  grid-gap: 66px 66px;
+}
+
+main .skillSection .wrapper .skillContainer .skill img {
+  max-width: 100%;
+  height: auto;
+}
+
+main .skillSection .wrapper .skillContainer .skill p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.6em;
+  margin-top: 6px;
+}
+
+main .aboutSection {
+  margin-top: 74px;
+  background-color: #ffdfdf;
+  padding: 5em 0;
+  position: relative;
+  overflow: hidden;
+}
+
+main .aboutSection::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  right: 0;
+  top: 20px;
+  background: url("assets/aboutOverlay.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+main .aboutSection .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 7em;
+}
+
+main .aboutSection .wrapper .title h1 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+main .aboutSection .wrapper .title h1 img {
+  margin-left: 7px;
+  width: 15px;
+  height: 15px;
+}
+
+main .aboutSection .wrapper .aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 55px;
+}
+
+main .aboutSection .wrapper .aboutContainer img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
+
+main .aboutSection .wrapper .aboutContainer .aboutContent {
+  margin-left: 32px;
+  margin-top: 33px;
+}
+
+main .aboutSection .wrapper .aboutContainer .aboutContent p {
+  font-size: 2em;
+  max-width: 70%;
+  word-spacing: 4.2px;
+  line-height: 1.4;
+}
+
+main .aboutSection .wrapper .aboutContainer .aboutContent a {
+  color: white;
+  background-color: black;
+  width: 120px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.7em;
+  margin-top: 12px;
+}
+
+main .aboutSection .wrapper .aboutContainer .aboutContent a img {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+
+main .contactSection {
+  background-color: black;
+  padding: 5em 0;
+}
+
+main .contactSection .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 7em;
+}
+
+main .contactSection .wrapper .title h1 {
+  color: white;
+  font-family: "Abril Fatface", cursive;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+main .contactSection .wrapper .title h1 img {
+  margin-left: 7px;
+  width: 15px;
+  height: 15px;
+}
+
+main .contactSection .wrapper .title p {
+  font-size: 1.7em;
+  color: #0e34ff;
+  line-height: 1.7;
+}
+
+main .contactSection .wrapper .title p:nth-of-type(2) {
+  color: #00ff9a;
+}
+
+main .contactSection .wrapper .formContainer {
+  margin-top: 63px;
+  position: relative;
+  max-width: 67%;
+}
+
+main .contactSection .wrapper .formContainer label {
+  color: white;
+  font-size: 1.6em;
+}
+
+main .contactSection .wrapper .formContainer input {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  margin-top: 12px;
+  margin-bottom: 32px;
+  background-color: #0e0e0e;
+  border: none;
+  color: white;
+  font-size: 1.6em;
+  padding: 0.5em;
+}
+
+main .contactSection .wrapper .formContainer textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  resize: none;
+  margin-top: 12px;
+  margin-bottom: 32px;
+  background-color: #0e0e0e;
+  border: none;
+  color: white;
+  font-size: 1.6em;
+  padding: 0.5em;
+}
+
+main .contactSection .wrapper .formContainer button {
+  background-color: blue;
+  color: white;
+  width: 120px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+main .contactSection .wrapper .formContainer button img {
+  height: 19px;
+  width: 19px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 7px;
+}
+
+@-webkit-keyframes border {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes border {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes clip {
+  0% {
+    -webkit-clip-path: circle(2% at 6% 90%);
+            clip-path: circle(2% at 6% 90%);
+  }
+  100% {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+  }
+}
+
+@keyframes clip {
+  0% {
+    -webkit-clip-path: circle(2% at 6% 90%);
+            clip-path: circle(2% at 6% 90%);
+  }
+  100% {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+  }
+}
+
+@-webkit-keyframes info {
+  0% {
+    margin-top: 72px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes info {
+  0% {
+    margin-top: 72px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.hamburgerMenu {
+  cursor: pointer;
+  display: none;
+}
+
+.hamburgerMenu .line {
+  width: 23px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: black;
+  margin-bottom: 3px;
+}
+
+.links2 {
+  position: absolute;
+  right: -100%;
+  z-index: 232;
+  top: 44px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1em;
+  width: 50%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.links2 a {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 22px;
+}
+
+.links2.active {
+  right: 0;
+}
+
+@media (max-width: 960px) {
+  header .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  header .wrapper .heroSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .wrapper .heroSection .heroText .title {
+    font-size: 3.9em;
+  }
+  header .wrapper .heroSection .heroText .projectBtn {
+    font-weight: bold;
+    background-color: #f66c6c;
+    width: 110px;
+    height: 40px;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.7em;
+    color: white;
+    margin-top: 22px;
+  }
+  header .wrapper .heroSection .heroBg .video {
+    width: 400px;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-transform: translateX(42px);
+            transform: translateX(42px);
+  }
+  main {
+    margin-top: 84px;
+  }
+  main .projectSection {
+    padding: 4em 0;
+    background-color: #fdff9e;
+  }
+  main .projectSection .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  main .projectSection .wrapper .title {
+    position: relative;
+  }
+  main .projectSection .wrapper .title h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Abril Fatface", cursive;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  main .projectSection .wrapper .title h1 img {
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  main .projectSection .wrapper .title p {
+    font-size: 1.7em;
+    color: #0e34ff;
+  }
+  main .projectSection .wrapper .projectContainer {
+    margin-top: 53px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 22px 22px;
+  }
+  main .projectSection .wrapper .projectContainer .project {
+    position: relative;
+  }
+  main .projectSection .wrapper .projectContainer .project img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .projectSection .wrapper .projectContainer .project .projectInfo {
+    position: absolute;
+    top: 0;
+    color: white;
+  }
+  main .skillSection {
+    margin-top: 44px;
+  }
+  main .skillSection .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  main .skillSection .wrapper .title h1 {
+    font-family: "Abril Fatface", cursive;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  main .skillSection .wrapper .title h1 img {
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  main .skillSection .wrapper .title p {
+    font-size: 1.7em;
+    color: #0e34ff;
+  }
+  main .skillSection .wrapper .skillContainer {
+    margin-top: 53px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    grid-gap: 66px 66px;
+  }
+  main .skillSection .wrapper .skillContainer .skill img {
+    width: 100%;
+  }
+  main .skillSection .wrapper .skillContainer .skill p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6em;
+    margin-top: 6px;
+  }
+  main .aboutSection {
+    margin-top: 74px;
+    background-color: #ffdfdf;
+    padding: 5em 0;
+    position: relative;
+    overflow: hidden;
+  }
+  main .aboutSection::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    right: 0;
+    top: 20px;
+    background: url("assets/aboutOverlay.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+  main .aboutSection .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  main .aboutSection .wrapper .title h1 {
+    font-family: "Abril Fatface", cursive;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  main .aboutSection .wrapper .title h1 img {
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  main .aboutSection .wrapper .aboutContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 55px;
+  }
+  main .aboutSection .wrapper .aboutContainer img {
+    width: 250px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 4px;
+  }
+  main .aboutSection .wrapper .aboutContainer .aboutContent {
+    margin-left: 32px;
+    margin-top: 33px;
+  }
+  main .aboutSection .wrapper .aboutContainer .aboutContent p {
+    font-size: 2em;
+    max-width: 70%;
+    word-spacing: 4.2px;
+    line-height: 1.4;
+  }
+  main .aboutSection .wrapper .aboutContainer .aboutContent a {
+    color: white;
+    background-color: black;
+    width: 120px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.7em;
+    margin-top: 12px;
+  }
+  main .aboutSection .wrapper .aboutContainer .aboutContent a img {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+  }
+  main .contactSection {
+    background-color: black;
+    padding: 5em 0;
+  }
+  main .contactSection .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  main .contactSection .wrapper .title h1 {
+    color: white;
+    font-family: "Abril Fatface", cursive;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  main .contactSection .wrapper .title h1 img {
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  main .contactSection .wrapper .title p {
+    font-size: 1.7em;
+    color: #0e34ff;
+    line-height: 1.7;
+  }
+  main .contactSection .wrapper .title p:nth-of-type(2) {
+    color: #00ff9a;
+  }
+  main .contactSection .wrapper .formContainer {
+    margin-top: 63px;
+    position: relative;
+    max-width: 67%;
+  }
+  main .contactSection .wrapper .formContainer label {
+    color: white;
+    font-size: 1.6em;
+  }
+  main .contactSection .wrapper .formContainer input {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    background-color: #0e0e0e;
+    border: none;
+    color: white;
+    font-size: 1.6em;
+    padding: 0.5em;
+  }
+  main .contactSection .wrapper .formContainer textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    resize: none;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    background-color: #0e0e0e;
+    border: none;
+    color: white;
+    font-size: 1.6em;
+    padding: 0.5em;
+  }
+  main .contactSection .wrapper .formContainer button {
+    background-color: blue;
+    color: white;
+    width: 120px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+  }
+  main .contactSection .wrapper .formContainer button img {
+    height: 19px;
+    width: 19px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 7px;
+  }
+}
+
+@media (max-width: 600px) {
+  header .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  header .wrapper nav {
+    padding-top: 1em;
+  }
+  header .wrapper .heroSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 62px;
+  }
+  header .wrapper .heroSection .heroText .subTitle {
+    text-align: center;
+  }
+  header .wrapper .heroSection .heroText .title {
+    font-size: 3.9em;
+    text-align: center;
+  }
+  header .wrapper .heroSection .heroText .projectBtn {
+    font-weight: bold;
+    background-color: #f66c6c;
+    width: 90px;
+    height: 35px;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 22px;
+  }
+  header .wrapper .heroSection .heroBg {
+    display: none;
+  }
+  header .wrapper .heroSection .heroBg .video {
+    width: 400px;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-transform: translateX(42px);
+            transform: translateX(42px);
+  }
+  main {
+    margin-top: 84px;
+  }
+  main .projectSection {
+    padding: 4em 0;
+    background-color: #fdff9e;
+  }
+  main .projectSection .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  main .projectSection .wrapper .title {
+    position: relative;
+  }
+  main .projectSection .wrapper .title h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Abril Fatface", cursive;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  main .projectSection .wrapper .title h1 img {
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  main .projectSection .wrapper .title p {
+    font-size: 1.7em;
+    color: #0e34ff;
+  }
+  main .projectSection .wrapper .projectContainer {
+    margin-top: 53px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 22px 22px;
+  }
+  main .projectSection .wrapper .projectContainer .project {
+    position: relative;
+  }
+  main .projectSection .wrapper .projectContainer .project img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .projectSection .wrapper .projectContainer .project .projectInfo {
+    position: absolute;
+    top: 0;
+    color: white;
+  }
+  main .skillSection {
+    margin-top: 44px;
+  }
+  main .skillSection .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  main .skillSection .wrapper .title h1 {
+    font-family: "Abril Fatface", cursive;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  main .skillSection .wrapper .title h1 img {
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  main .skillSection .wrapper .title p {
+    font-size: 1.7em;
+    color: #0e34ff;
+  }
+  main .skillSection .wrapper .skillContainer {
+    margin-top: 53px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    grid-gap: 66px 66px;
+  }
+  main .skillSection .wrapper .skillContainer .skill img {
+    width: 100%;
+  }
+  main .skillSection .wrapper .skillContainer .skill p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6em;
+    margin-top: 6px;
+  }
+  main .aboutSection {
+    margin-top: 74px;
+    background-color: #ffdfdf;
+    padding: 5em 0;
+    position: relative;
+    overflow: hidden;
+  }
+  main .aboutSection::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    right: 0;
+    top: 20px;
+    background: url("assets/aboutOverlay.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+  main .aboutSection .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  main .aboutSection .wrapper .title h1 {
+    font-family: "Abril Fatface", cursive;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  main .aboutSection .wrapper .title h1 img {
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  main .aboutSection .wrapper .aboutContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 55px;
+  }
+  main .aboutSection .wrapper .aboutContainer img {
+    width: 250px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 4px;
+  }
+  main .aboutSection .wrapper .aboutContainer .aboutContent {
+    margin-left: 32px;
+    margin-top: 33px;
+  }
+  main .aboutSection .wrapper .aboutContainer .aboutContent p {
+    font-size: 2em;
+    max-width: 100%;
+    word-spacing: 4.2px;
+    line-height: 1.4;
+  }
+  main .aboutSection .wrapper .aboutContainer .aboutContent a {
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.5em;
+    margin-top: 12px;
+    position: relative;
+    z-index: 110;
+  }
+  main .aboutSection .wrapper .aboutContainer .aboutContent a img {
+    width: 14px;
+    height: 14px;
+    margin-right: 12px;
+  }
+  main .contactSection {
+    background-color: black;
+    padding: 5em 0;
+  }
+  main .contactSection .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  main .contactSection .wrapper .title h1 {
+    color: white;
+    font-family: "Abril Fatface", cursive;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  main .contactSection .wrapper .title h1 img {
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  main .contactSection .wrapper .title p {
+    font-size: 1.7em;
+    color: #0e34ff;
+    line-height: 1.7;
+  }
+  main .contactSection .wrapper .title p:nth-of-type(2) {
+    color: #00ff9a;
+  }
+  main .contactSection .wrapper .formContainer {
+    margin-top: 63px;
+    position: relative;
+    max-width: 100%;
+  }
+  main .contactSection .wrapper .formContainer label {
+    color: white;
+    font-size: 1.6em;
+  }
+  main .contactSection .wrapper .formContainer input {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    background-color: #0e0e0e;
+    border: none;
+    color: white;
+    font-size: 1.6em;
+    padding: 0.5em;
+  }
+  main .contactSection .wrapper .formContainer textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    resize: none;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    background-color: #0e0e0e;
+    border: none;
+    color: white;
+    font-size: 1.6em;
+    padding: 0.5em;
+  }
+  main .contactSection .wrapper .formContainer button {
+    background-color: blue;
+    color: white;
+    width: 120px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+  }
+  main .contactSection .wrapper .formContainer button img {
+    height: 19px;
+    width: 19px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 7px;
+  }
+}
+
+@media (max-width: 500px) {
+  header .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  header .wrapper nav .links {
+    display: none;
+  }
+  header .wrapper .heroSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 62px;
+  }
+  header .wrapper .heroSection .heroText .subTitle {
+    text-align: center;
+  }
+  header .wrapper .heroSection .heroText .title {
+    font-size: 3.9em;
+    text-align: center;
+  }
+  header .wrapper .heroSection .heroText .projectBtn {
+    font-weight: bold;
+    background-color: #f66c6c;
+    width: 90px;
+    height: 35px;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 22px;
+  }
+  header .wrapper .heroSection .heroBg {
+    display: none;
+  }
+  header .wrapper .heroSection .heroBg .video {
+    width: 400px;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-transform: translateX(42px);
+            transform: translateX(42px);
+  }
+  main {
+    margin-top: 84px;
+  }
+  main .projectSection {
+    padding: 4em 0;
+    background-color: #fdff9e;
+  }
+  main .projectSection .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  main .projectSection .wrapper .title {
+    position: relative;
+  }
+  main .projectSection .wrapper .title h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Abril Fatface", cursive;
+    font-weight: bold;
+    font-size: 2.3em;
+  }
+  main .projectSection .wrapper .title h1 img {
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  main .projectSection .wrapper .title p {
+    font-size: 1.5em;
+    color: #0e34ff;
+  }
+  main .projectSection .wrapper .projectContainer {
+    margin-top: 53px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 22px 22px;
+  }
+  main .projectSection .wrapper .projectContainer .project {
+    position: relative;
+  }
+  main .projectSection .wrapper .projectContainer .project img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .projectSection .wrapper .projectContainer .project .projectInfo {
+    position: absolute;
+    top: 0;
+    color: white;
+  }
+  main .skillSection {
+    margin-top: 44px;
+  }
+  main .skillSection .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  main .skillSection .wrapper .title h1 {
+    font-size: 2.3em;
+    font-family: "Abril Fatface", cursive;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  main .skillSection .wrapper .title h1 img {
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  main .skillSection .wrapper .title p {
+    font-size: 1.5em;
+    color: #0e34ff;
+  }
+  main .skillSection .wrapper .skillContainer {
+    margin-top: 53px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    grid-gap: 66px 66px;
+  }
+  main .skillSection .wrapper .skillContainer .skill img {
+    width: 50px;
+    height: 50px;
+  }
+  main .skillSection .wrapper .skillContainer .skill p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-top: 6px;
+  }
+  main .aboutSection {
+    margin-top: 74px;
+    background-color: #ffdfdf;
+    padding: 5em 0;
+    position: relative;
+    overflow: hidden;
+  }
+  main .aboutSection::before {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    right: 0;
+    top: 20px;
+    background: url("assets/aboutOverlay.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+  main .aboutSection .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  main .aboutSection .wrapper .title h1 {
+    font-size: 2.3em;
+    font-family: "Abril Fatface", cursive;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  main .aboutSection .wrapper .title h1 img {
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  main .aboutSection .wrapper .aboutContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 55px;
+  }
+  main .aboutSection .wrapper .aboutContainer img {
+    width: 190px;
+    height: 190px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 4px;
+    margin: 0 auto;
+  }
+  main .aboutSection .wrapper .aboutContainer .aboutContent {
+    margin-left: 32px;
+    margin-top: 33px;
+  }
+  main .aboutSection .wrapper .aboutContainer .aboutContent p {
+    font-size: 1.7em;
+    max-width: 100%;
+    word-spacing: 4.2px;
+    line-height: 1.4;
+  }
+  main .aboutSection .wrapper .aboutContainer .aboutContent a {
+    color: white;
+    background-color: black;
+    width: 90px;
+    height: 40px;
+    padding: 0.4em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.3em;
+    margin-top: 12px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 110;
+  }
+  main .aboutSection .wrapper .aboutContainer .aboutContent a img {
+    display: none;
+    width: 14px;
+    height: 14px;
+    margin-right: 12px;
+  }
+  main .contactSection {
+    background-color: black;
+    padding: 5em 0;
+  }
+  main .contactSection .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3em;
+  }
+  main .contactSection .wrapper .title h1 {
+    color: white;
+    font-family: "Abril Fatface", cursive;
+    font-weight: bold;
+    font-size: 2.3em;
+  }
+  main .contactSection .wrapper .title h1 img {
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  main .contactSection .wrapper .title p {
+    font-size: 1.5em;
+    color: #0e34ff;
+    line-height: 2;
+  }
+  main .contactSection .wrapper .title p:nth-of-type(2) {
+    color: #00ff9a;
+  }
+  main .contactSection .wrapper .formContainer {
+    margin-top: 63px;
+    position: relative;
+    max-width: 100%;
+  }
+  main .contactSection .wrapper .formContainer label {
+    color: white;
+    font-size: 1.3em;
+  }
+  main .contactSection .wrapper .formContainer input {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    background-color: #0e0e0e;
+    border: none;
+    color: white;
+    font-size: 1.6em;
+    padding: 0.5em;
+  }
+  main .contactSection .wrapper .formContainer textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    resize: none;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    background-color: #0e0e0e;
+    border: none;
+    color: white;
+    font-size: 1.6em;
+    padding: 0.5em;
+  }
+  main .contactSection .wrapper .formContainer button {
+    background-color: blue;
+    color: white;
+    width: 90px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+  }
+  main .contactSection .wrapper .formContainer button img {
+    height: 14px;
+    width: 14px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 7px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hamburgerMenu {
+    display: block;
+  }
+  .links2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+
+// font-family: 'Abril Fatface', cursive;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow-x:hidden;
+    font-family: 'Lato', sans-serif;
+
+}
+html{
+    font-size: 62.5%;
+}
+input,button,textarea,a{
+    font: inherit;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}

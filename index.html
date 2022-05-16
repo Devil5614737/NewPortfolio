@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <nav>
+            <a href="#" class="logo">John</a>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="hamburgerMenu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="links2 ">
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+        <div class="heroSection">
+            <div class="heroText">
+                <p id="subtitle" class="subTitle">Hi, I am john</p>
+                <p id="title" class="title">Front-End Web <br>Developer</p>
+                <a href="#" class="projectBtn">Projects</a>
+            </div>
+            <div class="heroBg">
+                <video loop class="video" autoplay src="assets/videoBg.mp4"></video>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="projectSection" id="smoothWrapper">
+        <div class="wrapper" id="smoothContent">
+            <div class="title">
+                <h1 id="projectTitle">Projects
+                    <img src="assets/triangle.svg" alt="">
+                </h1>
+                <p id="projectSubtitle">here are some of my projects...</p>
+            </div>
+            <div class="projectContainer">
+                <div class="project">
+                    <img src="assets/thumbnail.webp" alt="project">
+                    <div class="projectInfo">
+                        <p class="title">Netflix Clone</p>
+                        <div class="techs">
+                            <p>Next.js</p>
+                            <p>Tailwind</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/thumbnail.webp" alt="project">
+                    <div class="projectInfo">
+                        <p class="title">Netflix Clone</p>
+                        <div class="techs">
+                            <p>Next.js</p>
+                            <p>Tailwind</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/thumbnail.webp" alt="project">
+                    <div class="projectInfo">
+                        <p class="title">Netflix Clone</p>
+                        <div class="techs">
+                            <p>Next.js</p>
+                            <p>Tailwind</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/thumbnail.webp" alt="project">
+                    <div class="projectInfo">
+                        <p class="title">Netflix Clone</p>
+                        <div class="techs">
+                            <p>Next.js</p>
+                            <p>Tailwind</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/thumbnail.webp" alt="project">
+                    <div class="projectInfo">
+                        <p class="title">Netflix Clone</p>
+                        <div class="techs">
+                            <p>Next.js</p>
+                            <p>Tailwind</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/thumbnail.webp" alt="project">
+                    <div class="projectInfo">
+                        <p class="title">Netflix Clone</p>
+                        <div class="techs">
+                            <p>Next.js</p>
+                            <p>Tailwind</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/thumbnail.webp" alt="project">
+                    <div class="projectInfo">
+                        <p class="title">Netflix Clone</p>
+                        <div class="techs">
+                            <p>Next.js</p>
+                            <p>Tailwind</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/thumbnail.webp" alt="project">
+                    <div class="projectInfo">
+                        <p class="title">Netflix Clone</p>
+                        <div class="techs">
+                            <p>Next.js</p>
+                            <p>Tailwind</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/thumbnail.webp" alt="project">
+                    <div class="projectInfo">
+                        <p class="title">Netflix Clone</p>
+                        <div class="techs">
+                            <p>Next.js</p>
+                            <p>Tailwind</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skillSection">
+        <div class="wrapper">
+            <div class="title">
+                <h1 id="skillTitle">Skills
+                    <img src="assets/triangle.svg" alt="">
+                </h1>
+                <p id="skillSubtitle">Tools and Techonologies...</p>
+            </div>
+            <div class="skillContainer">
+                <div class="skill">
+                    <img src="assets/html.svg" alt="skill">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/css.svg" alt="skill">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/javascript.svg" alt="skill">
+                    <p>JAVASCRIPT</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/react.svg" alt="skill">
+                    <p>REACT</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/nextJs.svg" alt="skill">
+                    <p>NEXT.JS</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/tailwind.svg" alt="skill">
+                    <p>TAILWIND</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/sass.svg" alt="skill">
+                    <p>SASS</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/firebase.svg" alt="skill">
+                    <p>FIREBASE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="aboutSection">
+        <div class="wrapper">
+            <div class="title">
+                <h1>About
+                    <img src="assets/triangle.svg" alt="">
+                </h1>
+            </div>
+            <div class="aboutContainer">
+                <img src="assets/dp.jpg" alt="me">
+                <div class="aboutContent">
+                    <p>Hello!! my name is `Kaushik Sheel` passionate FrontEnd Web Developer, love to build amazing products and solving problems.</p>
+                    <a href="#">
+                        <img src="assets/download.svg" alt="icon">
+                        Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contactSection">
+        <div class="wrapper">
+            <div class="title">
+                <h1>Contact
+                    <img src="assets/triangle.svg" alt="">
+                </h1>
+                <p>If you have any project or job feel free to contact me...</p>
+                <p>phone: +918299434789</p>
+            </div>
+            <form  class="formContainer">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+                <label for="message">Message</label>
+                <textarea  id="message"></textarea>
+                <button>
+                    <img src="assets/message.svg" alt="message icon">
+                    Submit</button>
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+</html>
