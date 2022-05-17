@@ -8,7 +8,6 @@
 }
 
 body {
-  overflow-x: hidden;
   font-family: 'Lato', sans-serif;
 }
 
@@ -582,7 +581,7 @@ main .contactSection .wrapper .formContainer button img {
 
 .links2 {
   position: absolute;
-  right: -50%;
+  right: 0%;
   z-index: 232;
   top: 44px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -599,7 +598,7 @@ main .contactSection .wrapper .formContainer button img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
+  opacity: 0;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -611,10 +610,7 @@ main .contactSection .wrapper .formContainer button img {
 }
 
 .links2.active {
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
 }
 
 @media (max-width: 960px) {

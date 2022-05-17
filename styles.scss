@@ -428,19 +428,19 @@ main {
 .links2{
 
   position: absolute;
-  right: -50%;
+  right: 0%;
   z-index: 232;
   top: 44px;
   background-color: rgba(0,0,0,.6);
   padding: 1em;
   width: 50%;
   height:30%;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: none;
+ opacity: 0;
   transition: all .3s ease-in-out;
+
   a{
     color: white;
 font-size: 2em;
@@ -449,8 +449,8 @@ margin-bottom: 22px;
 }
 
 .links2.active{
-  right: 0;
-  display: flex;
+  // display: none;
+  opacity: 1;
 }
 // --media queries
 $tablet: 960px;
